@@ -13,7 +13,8 @@ export default function AddCandidate() {
     const [phoneNumber, setPhoneNumber] = useState('');
     const [notes, setNotes] = useState('');
 
-    const onSubmitClick = async() => {
+    const onSubmit = async e => {
+        e.preventDefault();
         await axios.post('/api/candidates/add', {firstName, lastName, email, phoneNumber, notes});
         refreshStatusCounts();
         navigate('/');
@@ -24,7 +25,7 @@ export default function AddCandidate() {
             <div className="col-md-6 offset-md-3">
                 <div className="card card-body bg-light">
                     <h4>Add Candidate</h4>
-                    <form>
+                    <form onSubmit={onSubmit}>
                         <input type="text" placeholder="First Name" className="form-control"
                         value={firstName} onChange={({target}) => setFirstName(target.value)} />
                         <br />
@@ -40,7 +41,7 @@ export default function AddCandidate() {
                         <textarea rows="5" className="form-control" 
                         value={notes} onChange={({target}) => setNotes(target.value)} />
                         <br />
-                        <button className="btn btn-primary" onClick={onSubmitClick}>Submit</button>
+                        <button className="btn btn-primary">Submit</button>
                     </form>
                 </div>
             </div>
