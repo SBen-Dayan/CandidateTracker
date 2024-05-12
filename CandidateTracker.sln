@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandidateTracker.Web", "CandidateTracker.Web\CandidateTracker.Web.csproj", "{6C7516DB-35BC-4E07-A6DF-0CFACF0D82C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandidateTracker.Data", "CandidateTracker.Data\CandidateTracker.Data.csproj", "{A6F0D61F-BF25-46CB-8DF9-AFBDE8504699}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C7516DB-35BC-4E07-A6DF-0CFACF0D82C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C7516DB-35BC-4E07-A6DF-0CFACF0D82C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C7516DB-35BC-4E07-A6DF-0CFACF0D82C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C7516DB-35BC-4E07-A6DF-0CFACF0D82C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6F0D61F-BF25-46CB-8DF9-AFBDE8504699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6F0D61F-BF25-46CB-8DF9-AFBDE8504699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6F0D61F-BF25-46CB-8DF9-AFBDE8504699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6F0D61F-BF25-46CB-8DF9-AFBDE8504699}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
