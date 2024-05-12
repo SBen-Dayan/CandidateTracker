@@ -6,13 +6,13 @@ export default function Confirmed() {
     const [candidates, setCandidates] = useState([]);
 
     useEffect(() => {
-        (async() => {
-            const {data} = await axios.get('/api/candidates/getConfirmed');
+        (async () => {
+            const { data } = await axios.get('/api/candidates/getConfirmed');
             setCandidates(data);
         })();
     }, [])
+
     return <div className="mt-5">
-    <Table
-    rows={candidates} />
+        <Table rows={candidates} />
     </div>
 }

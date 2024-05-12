@@ -24,7 +24,7 @@ export default function Pending() {
                 </tr>
             </thead>
             <tbody>
-                {candidates.map(({id, firstName, lastName, phoneNumber, email}) => <tr key={id}>
+                {candidates.map(({ id, firstName, lastName, phoneNumber, email }) => <tr key={id}>
                     <td><Link to={`/details/${id}`}>View Details</Link></td>
                     <td>{firstName}</td>
                     <td>{lastName}</td>

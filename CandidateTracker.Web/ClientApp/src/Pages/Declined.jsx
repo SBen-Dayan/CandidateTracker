@@ -6,13 +6,13 @@ export default function Declined() {
     const [candidates, setCandidates] = useState([]);
 
     useEffect(() => {
-        (async() => {
-            const {data} = await axios.get('/api/candidates/getDeclined');
+        (async () => {
+            const { data } = await axios.get('/api/candidates/getDeclined');
             setCandidates(data);
         })();
     }, [])
+
     return <div className="mt-5">
-    <Table
-    rows={candidates} />
+        <Table rows={candidates} />
     </div>
 }
